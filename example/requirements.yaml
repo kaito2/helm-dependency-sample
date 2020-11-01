@@ -1,0 +1,4 @@
+dependencies:
+  - name: locust-in-cage
+    version: 0.1.0
+    repository: "https://raw.githubusercontent.com/kaito2/helm-dependency-sample/master/"
