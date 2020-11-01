@@ -16,6 +16,7 @@ locust:
     nodeSelector:
       use: "forLoadGenerator"
   worker:
+    replicaCount: 3
     resources:
       requests:
         cpu: "350m"
