@@ -1,4 +1,5 @@
-locust:
-  master:
-    config:
-      target-host: "http://sample.example.com"
+locust-in-cage:
+  locust:
+    master:
+      config:
+        target-host: "http://sample.example.com"
