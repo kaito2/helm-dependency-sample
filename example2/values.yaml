@@ -5,3 +5,5 @@ locust-in-cage:
         target-host: "http://override.example.com"
     worker:
       replicaCount: 0
+      config:
+        configmapName: conf # DO NOT EDIT
