@@ -1,19 +1,11 @@
-import time
-from locust import HttpUser, task, between
+from locust import HttpLocust, TaskSet, task
 
-class QuickstartUser(HttpUser):
-    wait_time = between(1, 2)
+class ElbTasks(TaskSet):
+  @task
+  def status(self):
+      self.client.get("/status")
 
-    @task
-    def index_page(self):
-        self.client.get("/hello")
-        self.client.get("/world")
-
-    @task(3)
-    def view_item(self):
-        for item_id in range(10):
-            self.client.get(f"/item?id={item_id}", name="/item")
-            time.sleep(1)
-
-    def on_start(self):
-        self.client.post("/login", json={"username":"foo", "password":"bar"})
+class ElbWarmer(HttpLocust):
+  task_set = ElbTasks
+  min_wait = 1000
+  max_wait = 3000
