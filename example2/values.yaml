@@ -2,7 +2,7 @@ locust-in-cage:
   locust:
     master:
       config:
-        target-host: "http://override.example.com"
+        target-host: "http://sample-service.default"
     worker:
       replicaCount: 0
       config:

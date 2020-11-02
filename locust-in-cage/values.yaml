@@ -4,6 +4,7 @@
 
 locust:
   image:
+    # TODO: Updated to version 1 or higher.
     tag: 0.9.0
   master:
     config:
