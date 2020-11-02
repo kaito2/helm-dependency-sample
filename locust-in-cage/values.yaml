@@ -4,7 +4,7 @@
 
 locust:
   image:
-    tag: 0.14.5
+    tag: 0.9.0
   master:
     config:
       target-host: "http://aaa.example.com"
