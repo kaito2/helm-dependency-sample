@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: conf
 data:
-{{ (.Files.Glob "task/*").AsConfig | indent 2 }}
+{{ (.Files.Glob "tasks/*").AsConfig | indent 2 }}
