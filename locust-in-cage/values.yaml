@@ -3,6 +3,8 @@
 # Declare variables to be passed into your templates.
 
 locust:
+  image:
+    tag: 1.13.1
   master:
     config:
       target-host: "http://aaa.example.com"
