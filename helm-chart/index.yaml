@@ -13,6 +13,6 @@ entries:
     name: locust-in-cage
     type: application
     urls:
-    - locust-in-cage-0.1.0.tgz
-    version: 0.1.0
+    - locust-in-cage-0.1..tgz
+    version: 0.1.1
 generated: "2020-11-02T02:40:44.791389+09:00"
