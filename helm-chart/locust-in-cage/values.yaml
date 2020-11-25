@@ -16,8 +16,8 @@ locust:
       limits:
         cpu: "350m"
         memory: "256Mi"
-    nodeSelector:
-      use: "forLoadGenerator"
+    # nodeSelector:
+    #   use: "forLoadGenerator"
   worker:
     replicaCount: 3
     resources:
@@ -27,5 +27,5 @@ locust:
       limits:
         cpu: "350m"
         memory: "256Mi"
-    nodeSelector:
-      use: "forLoadGenerator"
+    # nodeSelector:
+    #   use: "forLoadGenerator"
